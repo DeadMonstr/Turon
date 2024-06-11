@@ -1,0 +1,41 @@
+@import "../../../styles/variables"
+.textarea
+  display: flex
+  flex-direction: column
+  color: #1F2937
+
+  textarea
+    width: 290px
+    height: 74px
+    outline-color: $color-hover
+    border-radius: 5px
+    padding: 10px 0 0 10px
+
+    &:focus
+      outline-color: #B6B9FF
+
+    label
+      margin-top: 10px
+      color: #6B7280
+
+.textarea_disabled
+  display: flex
+  flex-direction: column
+  color: #1F2937
+
+  textarea
+    width: 290px
+    height: 74px
+    outline-color: #9CA3AF
+    border-radius: 5px
+    padding: 10px 0 0 10px
+    cursor: not-allowed
+    background-color: #D1D5DB
+
+  label
+    margin-top: 10px
+    color: #6B7280
+
+  textarea [placeholder]
+    &:focus
+      outline-color: #B6B9FF

@@ -1,0 +1,26 @@
+@import "../../../styles/variables"
+@import "../../../styles/mixins"
+
+.checkbox
+  display: flex
+  align-items: center
+  color: #656565
+  & input[type=checkbox]
+    width: 20px
+    background: #121680
+    height: 20px
+    &:focus
+      box-shadow: 0 0 5px 2px #869CD7
+      border: 5px
+
+.checkbox_disabled
+  display: flex
+  align-items: center
+  color: #D2D2D2
+  & input[type=checkbox]
+    width: 20px
+    height: 20px
+    cursor: not-allowed
+    &:focus
+      box-shadow: 0 0 5px 2px #869CD7
+      border: 5px

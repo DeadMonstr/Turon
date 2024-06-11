@@ -1,20 +1,31 @@
 import React from 'react'
-import Icon from "../../../assets/icons/PencilSimpleLine.png"
-
-import cls from "./Home.module.sass"
 import Button from "../../ui/button/button";
+import Checkbox from "../../ui/checkbox/checkbox";
+import Trash from "../../../assets/icons/trash-2.png"
+import Textarea from "../../ui/textarea/textarea";
 
 
 export const Home = () => {
 
     return (
-        <div className={cls.Home}>
-        <Button>
-            {/*button*/}
-            <img src={Icon} alt=""/>
-        </Button>
+        <>
 
-        </div>
+                {/*<Checkbox>*/}
+                {/*    label*/}
+                {/*    <input type="checkbox"/>*/}
+
+                {/*</Checkbox>*/}
+
+            {/*<Button>*/}
+            {/*    button*/}
+            {/*</Button>*/}
+
+            {/*<Textarea>*/}
+            {/*    <span>label</span>*/}
+            {/*    <textarea placeholder="tuldiring" name="" id="" cols="" rows=""></textarea>*/}
+            {/*    <label htmlFor="">label</label>*/}
+            {/*</Textarea>*/}
+        </>
     );
 };
 
