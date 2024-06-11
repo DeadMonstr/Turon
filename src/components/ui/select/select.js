@@ -10,28 +10,6 @@ function Select() {
                     <option>Select</option>
                 </select>
             </div>
-
-            <div className={cls.selectContainer}>
-                <label>Label</label>
-                <select>
-                    <option>Select</option>
-                </select>
-            </div>
-
-            <div className={cls.selectContainer}>
-                <label>Label</label>
-                <select>
-                    <option>Select</option>
-                </select>
-            </div>
-
-            <div className={cls.selectContainer}>
-                <label>Label</label>
-                <select>
-                    <option>Select</option>
-                </select>
-            </div>
-
             <div className={cls.selectContainer}>
                 <label>Label</label>
                 <select disabled>
