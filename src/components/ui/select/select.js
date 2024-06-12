@@ -1,23 +1,21 @@
 import React from 'react';
-import cls from "./select.module.sass"
+import cls from './select.module.sass';
 
-function Select() {
+const Select = ({ children, disabled, style, onChange }) => {
     return (
-        <div className={cls.Select}>
-            <div className={cls.selectContainer}>
-                <label>Label</label>
-                <select>
-                    <option>Select</option>
-                </select>
-            </div>
-            <div className={cls.selectContainer}>
-                <label>Label</label>
-                <select disabled>
-                    <option>Select</option>
-                </select>
-            </div>
+        <div className={`${cls.selectWrapper} ${disabled ? cls.disabled : ''}`}>
+            <label className={cls.label}>Label</label>
+            <select
+                style={style}
+                disabled={disabled}
+                className={cls.select}
+                onChange={onChange}
+            >
+                {children}
+            </select>
         </div>
     );
-}
+};
+
 
 export default Select;
