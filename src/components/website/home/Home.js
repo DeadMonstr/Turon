@@ -1,11 +1,11 @@
 import React, {useState} from 'react'
 import Icon from "../../../assets/icons/PencilSimpleLine.png"
-
 import cls from "./Home.module.sass"
 import Button from "../../ui/button/button";
 import Select from "../../ui/select/select";
 import Radio from "../../ui/radio/radio";
 import Modal from "../../ui/modals/modal";
+import CustomSelect from "../../ui/custom/custom";
 
 export const Home = () => {
     //  this comment is shaha's please delete
@@ -48,6 +48,7 @@ export const Home = () => {
                     disabled
                 />
             <Modal/>
+            <CustomSelect />
 
         </div>
     );
