@@ -1,0 +1,94 @@
+@import "styles/variables"
+@import "styles/mixins"
+.alert
+  .success
+    margin: 10px
+    &__main
+      display: flex
+      background-color: $success-alert-bc
+      border: 1px solid $success-alert-br
+      padding: 24px
+      border-radius: 5px
+      box-shadow: 0 6px 10px 0 #ebebeb
+      width: 630px
+      &_img
+        img
+          margin-right: 10px
+      &_title
+        color: #3C3C3C
+        font-size: $font-size-32
+        font-family: Inter
+      &_descr
+        color: #656565
+        font-family: Inter
+      &_close
+        @include btn-active
+        img
+          justify-self: flex-end
+
+  .danger
+    margin: 10px
+    &__main
+      display: flex
+      background-color: $danger-alert-bc
+      width: 630px
+      border: 1px solid $border-danger-color
+      padding: 24px
+      border-radius: 5px
+      box-shadow: 0 6px 10px 0 #ebebeb
+      &_img
+        img
+          margin-right: 10px
+      &_title
+        color: #3C3C3C
+        font-size: $font-size-32
+        font-family: Inter
+      &_descr
+        color: #656565
+        font-family: Inter
+      &_close
+        @include btn-active
+  .warning
+    margin: 10px
+    &__main
+      display: flex
+      background-color: $warning-alert-bc
+      width: 630px
+      border: 1px solid $warning-alert-br
+      padding: 24px
+      border-radius: 5px
+      box-shadow: 0 6px 10px 0 #ebebeb
+      &_img
+        img
+          margin-right: 10px
+      &_title
+        color: #3C3C3C
+        font-size: $font-size-32
+        font-family: Inter
+      &_descr
+        color: #656565
+        font-family: Inter
+      &_close
+        @include btn-active
+  .info
+    margin: 10px
+    &__main
+      display: flex
+      background-color: $info-alert-bc
+      width: 630px
+      border: 1px solid $info-alert-br
+      padding: 24px
+      border-radius: 5px
+      box-shadow: 0 6px 10px 0 #ebebeb
+      &_img
+        img
+          margin-right: 10px
+      &_title
+        color: #3C3C3C
+        font-size: $font-size-32
+        font-family: Inter
+      &_descr
+        color: #656565
+        font-family: Inter
+      &_close
+        @include btn-active

@@ -1,9 +1,8 @@
-@import "../../../styles/variables"
+@import "../../../../styles/variables"
 .textarea
   display: flex
   flex-direction: column
   color: #1F2937
-
   textarea
     width: 290px
     height: 74px
@@ -21,7 +20,7 @@
 .textarea_disabled
   display: flex
   flex-direction: column
-  color: #1F2937
+  color: $disabled-color
 
   textarea
     width: 290px
@@ -34,7 +33,7 @@
 
   label
     margin-top: 10px
-    color: #6B7280
+    color: $disabled-color
 
   textarea [placeholder]
     &:focus

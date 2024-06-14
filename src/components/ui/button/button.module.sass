@@ -1,9 +1,9 @@
-@import "../../../styles/variables"
-@import "../../../styles/mixins"
+@import "styles/variables"
+@import "styles/mixins"
 
 
 
-.btn
+.default
   display: flex
   align-items: center
   padding: 0 20px 0 20px
@@ -13,6 +13,7 @@
   color: $text-color
   outline: none
   border: none
+  margin: 5px 0 5px 0
   &:active
     @include btn-active
   &:hover
@@ -25,9 +26,41 @@
   height: 36px
   border-radius: 4px
   outline: none
+  margin: 5px 0 5px 0
   border: none
   background-color: $btn-disabled
   color: grey
   &:hover
     cursor: not-allowed
+.warning
+  display: flex
+  align-items: center
+  padding: 0 20px 0 20px
+  height: 36px
+  border-radius: 4px
+  outline: none
+  border: none
+  margin: 5px 0 5px 0
+  background-color: $warning
+  color: $text-color
+  cursor: pointer
+  &:active
+    @include btn-active
+    background-color: $warning-active
 
+
+.allowed
+  display: flex
+  align-items: center
+  padding: 0 20px 0 20px
+  height: 36px
+  border-radius: 4px
+  outline: none
+  border: none
+  margin: 5px 0 5px 0
+  background-color: $btn-allowed
+  color: $text-color
+  cursor: pointer
+  &:active
+    @include btn-active
+    background-color: $btn-allowed-active

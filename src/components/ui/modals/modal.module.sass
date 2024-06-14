@@ -1,0 +1,224 @@
+
+@import "styles/variables"
+@import "styles/mixins"
+.Modal
+  font-family: Arial, sans-serif
+
+
+
+
+
+.overlay
+  display: flex
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.5)
+  justify-content: center
+  align-items: center
+  z-index: 1000
+
+
+.modal
+  background: #fff
+  padding: 20px
+  border-radius: 8px
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 500px
+  width: 100%
+  z-index: 1001
+
+
+.modal h2
+  margin-top: 0
+
+
+button.close-modal,
+button.confirmDelete
+  margin-top: 10px
+  padding: 10px 20px
+  font-size: 16px
+  cursor: pointer
+
+
+.modalHandler
+  width: 100%
+  height: auto
+  display: flex
+  flex-direction: column
+
+.articleBox
+  width: 100%
+  height: 10%
+  display: flex
+  padding: 10px
+  justify-content: space-between
+  align-items: start
+//background: #11D300
+
+.Standart
+  font-size: $font-size-24
+  font-weight: 500
+  color: #000
+  display: flex
+  gap: 10px
+  align-items: start
+
+.CloseModal
+  margin: 10px
+  padding: 10px 20px
+  font-size: 16px
+  background: none
+  border: none
+  cursor: pointer
+
+
+.paragraphBox
+  width: 100%
+  height: auto
+  padding: 7px
+  margin-top: -20px
+  display: flex
+  align-items: start
+  justify-content: start
+  text-align: start
+
+.paragraph
+  font-size: $font-size-14
+  font-weight: lighter
+  color: $color-checkbox-text
+  letter-spacing: 1.4px
+
+.errorParagraph
+  font-size: $font-size-14
+  font-weight: lighter
+  color: $color-checkbox-text
+  letter-spacing: 1.4px
+  margin-left: 2.5rem
+
+.buttonPanel
+  width: 100%
+  height: 30%
+  display: flex
+  align-items: center
+  justify-content: end
+
+.buttonHandler
+  width: 70%
+  height: auto
+  padding: 4px
+  display: flex
+  justify-content: end
+  gap: 10px
+  align-items: center
+
+.okButton
+  width: 30%
+  height: 2.5rem
+  padding: 3px
+  border-radius: 7px
+  background: $color-active
+  border: none
+  color: #ffffff
+  cursor: pointer
+  &:active
+    @include btn-active
+
+
+.cancelButton
+  width: 30%
+  height: 2.5rem
+  padding: 3px
+  border-radius: 7px
+  background: $color-main-10
+  border: none
+  color: $color-active
+  cursor: pointer
+  &:active
+    @include btn-active
+
+.delButton
+  width: 30%
+  height: 2.5rem
+  padding: 3px
+  border-radius: 7px
+  background: $warning
+  border: none
+  color: #ffffff
+  cursor: pointer
+  font-size: $font-size-16
+  &:active
+    @include btn-active
+
+
+.cancelDelButton
+  width: 30%
+  height: 2.5rem
+  padding: 3px
+  border-radius: 7px
+  background: $color-main-3
+  border: none
+  font-size: $font-size-16
+  color: $warning
+  cursor: pointer
+  &:active
+    @include btn-active
+
+.successButton
+  width: 30%
+  height: 2.5rem
+  padding: 3px
+  border-radius: 7px
+  background: $color-main-11
+  border: none
+  color: #ffffff
+  cursor: pointer
+  font-size: $font-size-16
+  &:active
+    @include btn-active
+
+
+.cancelSuccessButton
+  width: 30%
+  height: 2.5rem
+  padding: 3px
+  border-radius: 7px
+  background: $text-color
+  border: none
+  font-size: $font-size-16
+  color: $color-main-11
+  cursor: pointer
+  &:active
+    @include btn-active
+
+.warningButton
+  width: 30%
+  height: 2.5rem
+  padding: 3px
+  border-radius: 7px
+  background: $color-warning
+  border: none
+  color: #ffffff
+  cursor: pointer
+  font-size: $font-size-16
+  &:active
+    @include btn-active
+
+
+.cancelWarningButton
+  width: 30%
+  height: 2.5rem
+  padding: 3px
+  border-radius: 7px
+  background: $color-warning-back
+  border: none
+  font-size: $font-size-16
+  color: $color-warning
+  cursor: pointer
+  &:active
+    @include btn-active
