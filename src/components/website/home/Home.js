@@ -27,8 +27,9 @@ export const Home = () => {
     }
 
     return (<>
+
         <Alerts>
-            {modal ?  <div className={clsAlert.danger}>
+            <div className={ clsAlert.danger }>
                 <div className={clsAlert.danger__main}>
                     <div className={clsAlert.danger__main_img}>
                         <img src={Warning} alt=""/>
@@ -46,10 +47,10 @@ export const Home = () => {
                         <img src={CloseModal} alt=""/>
                     </div>
                 </div>
-            </div> : null}
+            </div>
         </Alerts>
         <Alerts>
-            {modal ? <div className={clsAlert.success}>
+            <div className={clsAlert.success}>
                 <div className={clsAlert.success__main}>
                     <div className={clsAlert.success__main_img}>
                         <img src={CheckCircle} alt=""/>
@@ -67,8 +68,8 @@ export const Home = () => {
                         <img src={CloseModal} alt=""/>
                     </div>
                 </div>
-            </div> : null
-            }
+            </div>
+
         </Alerts>
         <Alerts>
             <div className={clsAlert.warning}>
@@ -112,73 +113,73 @@ export const Home = () => {
                 </div>
             </div>
         </Alerts>
-        {/*<Checkbox>*/}
-        {/*    label*/}
-        {/*    <input type="checkbox"/>*/}
-        {/*</Checkbox>*/}
+        <Checkbox>
+            label
+            <input type="checkbox"/>
+        </Checkbox>
 
 
-        {/*<Button>*/}
-        {/*    delete*/}
-        {/*</Button>*/}
+        <Button>
+            delete
+        </Button>
 
-        {/*<Textarea>*/}
-        {/*    <span>label</span>*/}
-        {/*    <textarea placeholder="tuldiring" name="" id="" cols="" rows=""></textarea>*/}
-        {/*    <label htmlFor="">label</label>*/}
-        {/*</Textarea>*/}
-        {/*<div className="inputs">*/}
-        {/*    <Input>*/}
-        {/*        <div className={cls.input__active}>*/}
-        {/*            <span>label</span>*/}
-        {/*            <div className={cls.input__active_form}>*/}
-        {/*                <input type="text"/>*/}
-        {/*                <img src={Calendar} alt=""/>*/}
-        {/*            </div>*/}
-        {/*            <span>helper text</span>*/}
-        {/*        </div>*/}
-        {/*    </Input>*/}
-        {/*    <Input>*/}
-        {/*        <div className={cls.input__disabled}>*/}
-        {/*            <span>label</span>*/}
-        {/*            <div className={cls.input__disabled_form}>*/}
-        {/*                <input type="text"/>*/}
-        {/*                <img src={WarningCircle} alt=""/>*/}
-        {/*            </div>*/}
-        {/*            <span>helper text</span>*/}
-        {/*        </div>*/}
-        {/*    </Input>*/}
-        {/*    <Input>*/}
-        {/*        <div className={cls.input__default}>*/}
-        {/*            <span>label</span>*/}
-        {/*            <div className={cls.input__default_form}>*/}
-        {/*                <input type="text"/>*/}
-        {/*                <img src={Calendar} alt=""/>*/}
-        {/*            </div>*/}
-        {/*            <span>helper text</span>*/}
-        {/*        </div>*/}
-        {/*    </Input>*/}
-        {/*    <Input>*/}
-        {/*        <div className={cls.input__warning}>*/}
-        {/*            <span>label</span>*/}
-        {/*            <div className={cls.input__warning_form}>*/}
-        {/*                <input type="text"/>*/}
-        {/*                <img src={Warning} alt=""/>*/}
-        {/*            </div>*/}
-        {/*            <span>helper text</span>*/}
-        {/*        </div>*/}
-        {/*    </Input>*/}
-        {/*    <Input>*/}
-        {/*        <div className={cls.input__allowed}>*/}
-        {/*            <span>label</span>*/}
-        {/*            <div className={cls.input__allowed_form}>*/}
-        {/*                <input type="text"/>*/}
-        {/*                <img src={CheckCircle} alt=""/>*/}
-        {/*            </div>*/}
-        {/*            <span>helper text</span>*/}
-        {/*        </div>*/}
-        {/*    </Input>*/}
-        {/*</div>*/}
+        <Textarea>
+            <span>label</span>
+            <textarea placeholder="tuldiring" name="" id="" cols="" rows=""></textarea>
+            <label htmlFor="">label</label>
+        </Textarea>
+        <div className="inputs">
+            <Input>
+                <div className={cls.input__active}>
+                    <span>label</span>
+                    <div className={cls.input__active_form}>
+                        <input type="text"/>
+                        <img src={Calendar} alt=""/>
+                    </div>
+                    <span>helper text</span>
+                </div>
+            </Input>
+            <Input>
+                <div className={cls.input__disabled}>
+                    <span>label</span>
+                    <div className={cls.input__disabled_form}>
+                        <input type="text"/>
+                        <img src={WarningCircle} alt=""/>
+                    </div>
+                    <span>helper text</span>
+                </div>
+            </Input>
+            <Input>
+                <div className={cls.input__default}>
+                    <span>label</span>
+                    <div className={cls.input__default_form}>
+                        <input type="text"/>
+                        <img src={Calendar} alt=""/>
+                    </div>
+                    <span>helper text</span>
+                </div>
+            </Input>
+            <Input>
+                <div className={cls.input__warning}>
+                    <span>label</span>
+                    <div className={cls.input__warning_form}>
+                        <input type="text"/>
+                        <img src={Warning} alt=""/>
+                    </div>
+                    <span>helper text</span>
+                </div>
+            </Input>
+            <Input>
+                <div className={cls.input__allowed}>
+                    <span>label</span>
+                    <div className={cls.input__allowed_form}>
+                        <input type="text"/>
+                        <img src={CheckCircle} alt=""/>
+                    </div>
+                    <span>helper text</span>
+                </div>
+            </Input>
+        </div>
     </>);
 };
 
