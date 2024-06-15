@@ -1,7 +1,7 @@
 import cls from "./alerts.module.sass"
 import  CloseModal from "assets/icons/X.png"
-import clsAlert from "components/ui/alerts/alerts.module.sass";
-import Warning from "assets/icons/Warning.svg";
+import clsAlert from "./alerts.module.sass";
+import Warning from "assets/icons/warning.svg";
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {disableAlertActive} from "slices/alertSlice";

@@ -1,10 +1,19 @@
 import React, {useState} from 'react';
+<<<<<<< HEAD
 
 import closeIcon from 'assets/icons/X.png'
 import errorIcon from 'assets/icons/Warning.svg'
 import successIcon from 'assets/icons/CheckCircle.png'
 import warningIcon from 'assets/icons/Warning.svg'
 import cls from "./modal.module.sass"
+=======
+import cls from './modal.module.sass';
+import closeIcon from '../../../assets/icons/cancel.svg'
+import errorIcon from '../../../assets/icons/error.svg'
+import successIcon from '../../../assets/icons/success.svg'
+import warningIcon from '../../../assets/icons/warning.svg'
+
+>>>>>>> 6e7a3cdccf4511db559aa9e1189e02534e2454d2
 function Modal() {
     const [modalType, setModalType] = useState(null);
 
@@ -29,7 +38,11 @@ function Modal() {
 
             {modalType && <div className={cls.overlay} onClick={closeModal}>
                 <div className={cls.modal} onClick={(e) => e.stopPropagation()}>
+<<<<<<< HEAD
                      {modalType === 'standard' && (
+=======
+                    {modalType === 'standard' && (
+>>>>>>> 6e7a3cdccf4511db559aa9e1189e02534e2454d2
                         <div className={cls.modalHandler}>
                             <div className={cls.articleBox}>
                                 <h1 className={cls.Standart}>Modal Window</h1>
@@ -124,4 +137,8 @@ function Modal() {
     );
 }
 
+<<<<<<< HEAD
 export default Modal;
+=======
+export default Modal;
+>>>>>>> 6e7a3cdccf4511db559aa9e1189e02534e2454d2

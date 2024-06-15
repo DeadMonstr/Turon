@@ -1,109 +1,40 @@
 @import "styles/variables"
 .input
-  &__default
-    &_form
-      border: 2px solid $input-border-color
-      width: 190px
-      height: 32px
-      display: flex
-      align-items: center
-      padding: 0 12px 0 12px
-      border-radius: 5px
-      input
-        border: none
-        outline: none
-      img
-        width: 16px
+  &_form
+    border: 2px solid $input-border-color
+    width: 190px
+    height: 32px
+    display: flex
+    align-items: center
+    padding: 0 12px 0 12px
+    border-radius: 5px
+    margin: 5px
+    input
+      border: none
+      outline: none
+    img
+      width: 16px
 
-        height: 16px
-
-
-
-
-  &__active
-    &_form
+      height: 16px
+    &.active
       border: 2px solid $color-hover
-      width: 190px
-      height: 32px
-      display: flex
-      align-items: center
-      padding: 0 12px 0 12px
-      border-radius: 5px
-
-      input
-        border: none
-        outline: none
-      img
-        width: 16px
-
-        height: 16px
-
-
-
-
-
-  &__disabled
-    color: $disabled-color
-    &:hover
-      cursor: not-allowed
-    &_form
-      border: 2px solid $btn-disabled
-      width: 190px
-      height: 32px
-      display: flex
-      align-items: center
-      padding: 0 12px 0 12px
-      border-radius: 5px
-      background-color: $btn-disabled
-      input
-        border: none
-        outline: none
+    &.disabled
+      color: $disabled-color
+      &:hover
+        cursor: not-allowed
+      &_form
+        border: 2px solid $btn-disabled
         background-color: $btn-disabled
-        &:hover
-          cursor: not-allowed
-      img
-        width: 16px
+        input
+          background-color: $btn-disabled
+          &:hover
+            cursor: not-allowed
 
-        height: 16px
+    &.warning
+      &_form
+        border: 2px solid $warning
 
-
-
-
-  &__warning
-
-    &_form
-      border: 2px solid $warning
-      width: 190px
-      height: 32px
-      display: flex
-      align-items: center
-      padding: 0 12px 0 12px
-      border-radius: 5px
-      input
-        border: none
-        outline: none
-      img
-        width: 16px
-
-        height: 16px
-
-
-
-  &__allowed
-
-    &_form
-      border: 2px solid $color-main-11
-      width: 190px
-      height: 32px
-      display: flex
-      align-items: center
-      padding: 0 12px 0 12px
-      border-radius: 5px
-      input
-        border: none
-        outline: none
-      img
-        width: 16px
-
-        height: 16px
+    &.allowed
+      &_form
+        border: 2px solid $color-main-11
 

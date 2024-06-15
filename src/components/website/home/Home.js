@@ -12,23 +12,23 @@ import clsAlert from "components/ui/alerts/alerts.module.sass"
 import CheckCircle from "assets/icons/CheckCircle.png"
 import Trash from "assets/icons/trash-2.png"
 import Calendar from "assets/icons/CalendarDots.svg"
-import Warning from "assets/icons/Warning.svg"
-import WarningCircle from "assets/icons/WarningCircle (1).png"
+import Warning from "assets/icons/warning.svg"
+import WarningCircle from "assets/icons/warning.svg"
 import CloseModal from "assets/icons/X.png";
 import {useState} from "react";
 
 export const Home = () => {
-    const [modal , setModal] = useState(true)
+    const [modal , setModal] = useState([])
 
 
 
-    const closeModal = () => {
-      setModal(false)
+    const closeModal = (value) => {
+        setModal(arr  => [...arr,value])
     }
 
     return (<>
 
-        <Alerts>
+        {modal.includes('danger') ?  null : <Alerts>
             <div className={ clsAlert.danger }>
                 <div className={clsAlert.danger__main}>
                     <div className={clsAlert.danger__main_img}>
@@ -37,19 +37,20 @@ export const Home = () => {
                     <div className={clsAlert.danger__main_info}>
                         <div className={clsAlert.danger__main_title}>
                             Modal Status
-                        </div>
+                        </div>.
                         <div className={clsAlert.danger__main_descr}>
                             It has survived not only five centuries, but also the leap into electronic typesetting,
                             remaining essentially unchanged.
                         </div>
                     </div>
-                    <div onClick={closeModal} className={clsAlert.danger__main_close}>
+                    <div onClick={()=>closeModal("danger")} className={clsAlert.danger__main_close}>
                         <img src={CloseModal} alt=""/>
                     </div>
                 </div>
             </div>
-        </Alerts>
-        <Alerts>
+        </Alerts>}
+        {modal.includes("success") ?  null :
+            <Alerts>
             <div className={clsAlert.success}>
                 <div className={clsAlert.success__main}>
                     <div className={clsAlert.success__main_img}>
@@ -64,14 +65,14 @@ export const Home = () => {
                             remaining essentially unchanged.
                         </div>
                     </div>
-                    <div  className={clsAlert.success__main_close}>
+                    <div  onClick={()=>closeModal("success")} className={clsAlert.success__main_close}>
                         <img src={CloseModal} alt=""/>
                     </div>
                 </div>
             </div>
-
         </Alerts>
-        <Alerts>
+        }
+        {modal.includes("warning") ? null :  <Alerts>
             <div className={clsAlert.warning}>
                 <div className={clsAlert.warning__main}>
                     <div className={clsAlert.warning__main_img}>
@@ -86,12 +87,12 @@ export const Home = () => {
                             remaining essentially unchanged.
                         </div>
                     </div>
-                    <div onClick={() => setModal(false)} className={clsAlert.warning__main_close}>
+                    <div onClick={() => closeModal("warning")} className={clsAlert.warning__main_close}>
                         <img src={CloseModal} alt=""/>
                     </div>
                 </div>
             </div>
-        </Alerts>
+        </Alerts> }
         <Alerts>
             <div className={clsAlert.info}>
                 <div className={clsAlert.info__main}>
@@ -182,4 +183,3 @@ export const Home = () => {
         </div>
     </>);
 };
-
